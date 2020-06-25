@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Demo</string>
+    <string name="behavior" translatable="false">自定义Behavior</string>
+    <string name="mime">mine</string>
+    <string name="setting">setting</string>
+    <string name="message">message</string>
+    <string name="my_message">MyMessage</string>
+    <string name="switch_language_e">Switch English</string>
+    <string name="switch_language_c">Switch China</string>
+    <string name="send">发送</string>
 </resources>

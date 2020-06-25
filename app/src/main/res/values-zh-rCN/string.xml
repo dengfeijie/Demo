@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Demo</string>
+    <string name="mime">我的</string>
+    <string name="setting">设置</string>
+    <string name="message">消息</string>
+    <string name="my_message">我的消息</string>
+    <string name="switch_language_e">切换英语</string>
+    <string name="switch_language_c">切换中文</string>
+</resources>

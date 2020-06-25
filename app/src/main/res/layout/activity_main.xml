@@ -1,19 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:context=".MainActivity">
+        android:layout_height="match_parent">
 
-    <AnalogClock
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <TextClock
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:format12Hour="yyyy年MM月dd日 H:mma EEEE"
-            tools:targetApi="jelly_bean_mr1"/>
-</LinearLayout>
+        <Button
+                android:id="@+id/btn_time"
+                style="@style/buttonStyle"
+                android:text="时间" />
+
+        <Button
+                android:id="@+id/btn_view"
+                style="@style/buttonStyle"
+                android:text="自定义view" />
+
+        <Button
+                android:id="@+id/btn_material_design"
+                style="@style/buttonStyle"
+                android:text="materialDesign风格" />
+
+        <Button
+                android:id="@+id/btn_localization"
+                style="@style/buttonStyle"
+                android:text="切换语言" />
+
+
+        <Button
+                android:id="@+id/btn_scroller"
+                style="@style/buttonStyle"
+                android:text="ScrollerLayout" />
+
+
+        <Button
+                android:id="@+id/btn_message"
+                style="@style/buttonStyle"
+                android:text="聊天" />
+
+        <Button
+                android:id="@+id/btn_lite_pal"
+                style="@style/buttonStyle"
+                android:text="数据库" />
+
+        <Button
+                android:id="@+id/btn_bluetooth"
+                style="@style/buttonStyle"
+                android:text="客户端蓝牙" />
+
+
+        <Button
+                android:id="@+id/btn_bluetooth_server"
+                style="@style/buttonStyle"
+                android:text="服务端蓝牙" />
+
+
+        <Button
+                android:id="@+id/btn_view_animation"
+                style="@style/buttonStyle"
+                android:text="view的显示动画" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
