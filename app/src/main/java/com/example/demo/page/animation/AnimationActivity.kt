@@ -23,9 +23,15 @@ class AnimationActivity : FrameActivity() {
             if (view.visibility == View.GONE) {
                 view.visibility = View.VISIBLE
                 view.animation = AnimationUtils.makeInAnimation(this, true)
+
+                view_2.visibility = View.VISIBLE
+                view_2.animation = AnimationUtils.loadAnimation(this, R.anim.view_animation_enter)
             } else {
                 view.visibility = View.GONE
                 view.animation = AnimationUtils.makeOutAnimation(this, true)
+
+                view_2.visibility = View.GONE
+                view_2.animation = AnimationUtils.loadAnimation(this, R.anim.view_animation_exit)
             }
         }
     }

@@ -61,5 +61,10 @@
                 android:id="@+id/btn_view_animation"
                 style="@style/buttonStyle"
                 android:text="view的显示动画" />
+
+        <Button
+                android:id="@+id/btn_jetpack"
+                style="@style/buttonStyle"
+                android:text="JetPackDemo" />
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>
