@@ -8,6 +8,7 @@
         <variable
                 name="News"
                 type="com.example.demo.bean.NewsBean.Result.Data" />
+
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -20,13 +21,14 @@
             android:elevation="3dp">
 
 
-        <ImageView
+        <com.example.demo.widget.LoadImageView
                 android:id="@+id/iv_news_image"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:layout_marginTop="30dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/mao"
+                app:imageUrl="@{News.thumbnailPicS}"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -37,7 +39,7 @@
                 android:layout_marginBottom="50dp"
                 android:text="@{News.title}"
                 android:textColor="#303030"
-                android:textSize="19sp"
+                android:textSize="17sp"
                 app:layout_constraintTop_toBottomOf="@+id/iv_news_image" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
