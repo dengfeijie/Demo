@@ -13,7 +13,9 @@ import com.example.demo.util.LanguageSwitch
 import kotlinx.android.synthetic.main.activity_localization.*
 import java.util.*
 
-
+/**
+ * 切换语言
+ */
 class LocalizationActivity : AppCompatActivity() {
 
 

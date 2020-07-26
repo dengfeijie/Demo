@@ -66,5 +66,21 @@
                 android:id="@+id/btn_jetpack"
                 style="@style/buttonStyle"
                 android:text="JetPackDemo" />
+
+
+        <Button
+                android:id="@+id/btn_socket"
+                style="@style/buttonStyle"
+                android:text="Socket" />
+
+        <Button
+                android:id="@+id/btn_location"
+                style="@style/buttonStyle"
+                android:text="高德定位" />
+
+        <Button
+                android:id="@+id/btn_mvvm"
+                style="@style/buttonStyle"
+                android:text="MVVM" />
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>

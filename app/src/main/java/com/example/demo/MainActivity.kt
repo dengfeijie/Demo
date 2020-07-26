@@ -12,6 +12,9 @@ import com.example.demo.page.bluetooth.BlueToothUserActivity
 import com.example.demo.page.first_code.JetPackDemoActivity
 import com.example.demo.page.materialdesign.MaterialDesignActivity
 import com.example.demo.page.first_code.SendMessageActivity
+import com.example.demo.page.mvvm.MvvmActivity
+import com.example.demo.page.news_mvvm.NewsActivity
+import com.example.demo.page.socket.SocketActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
@@ -30,6 +33,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         btn_bluetooth_server.setOnClickListener(this)
         btn_view_animation.setOnClickListener(this)
         btn_jetpack.setOnClickListener(this)
+        btn_socket.setOnClickListener(this)
+        btn_location.setOnClickListener(this)
+        btn_mvvm.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -66,6 +72,15 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
             btn_jetpack ->
                 startActivity(Intent(this, JetPackDemoActivity::class.java))
+
+            btn_socket ->
+                startActivity(Intent(this, SocketActivity::class.java))
+
+            btn_location ->
+                startActivity(Intent(this, LocationActivity::class.java))
+
+            btn_mvvm ->
+                startActivity(Intent(this, NewsActivity::class.java))
         }
     }
 }
