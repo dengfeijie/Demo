@@ -4,12 +4,13 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#000000"
         android:padding="20dp"
         tools:context=".page.animation.AnimationActivity">
 
 
     <Button
-            android:id="@+id/btn_view1"
+            android:id="@+id/btn_start"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="开始"
@@ -20,14 +21,14 @@
 
     <View
             android:id="@+id/view"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:layout_alignParentRight="true"
             android:layout_marginTop="10dp"
             android:background="#00BCD4"
-            app:layout_constraintEnd_toEndOf="@+id/btn_view1"
-            app:layout_constraintStart_toStartOf="@+id/btn_view1"
-            app:layout_constraintTop_toBottomOf="@+id/btn_view1" />
+            app:layout_constraintEnd_toEndOf="@+id/btn_start"
+            app:layout_constraintStart_toStartOf="@+id/btn_start"
+            app:layout_constraintTop_toBottomOf="@+id/btn_start" />
 
 
     <View
@@ -40,4 +41,103 @@
             app:layout_constraintStart_toStartOf="@+id/view"
             app:layout_constraintTop_toBottomOf="@+id/view" />
 
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="304dp"
+            android:background="@drawable/bg_white_radius_5dp"
+            android:orientation="vertical"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+                android:id="@+id/iv_wechat_logo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/ic_wechat_pay"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/white"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="微信支付"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/iv_wechat_logo"
+                app:layout_constraintLeft_toRightOf="@id/iv_wechat_logo"
+                app:layout_constraintTop_toTopOf="@id/iv_wechat_logo" />
+
+        <View
+                android:id="@+id/view_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="#B6B4B4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_wechat_logo" />
+
+
+        <LinearLayout
+                android:id="@+id/ll_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view_line">
+
+            <ImageView
+                    android:id="@+id/iv_alipay_logo"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/ic_alipay" />
+
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:text="支付宝支付"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_alipay_logo"
+                    app:layout_constraintLeft_toRightOf="@id/iv_alipay_logo"
+                    app:layout_constraintTop_toTopOf="@id/iv_alipay_logo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/ll_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:drawableBottom="@drawable/ic_action_return"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ll_layout">
+
+            <ImageView
+                    android:id="@+id/iv_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_action_return" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

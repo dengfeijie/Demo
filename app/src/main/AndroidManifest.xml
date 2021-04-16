@@ -30,7 +30,13 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".page.news_mvvm.NewsActivity"></activity>
+        <activity
+                android:name=".page.test.RestPageActivity"
+                android:theme="@style/transparent_activity" />
+        <activity android:name=".page.test.VagueActivity" />
+        <activity android:name=".page.test.FocusTestActivity" />
+        <activity android:name=".page.JsonDemoActivity" />
+        <activity android:name=".page.news_mvvm.NewsActivity" />
         <activity android:name=".page.mvvm.MvvmActivity" />
         <activity android:name=".page.LocationActivity" />
         <activity android:name=".page.socket.SocketActivity" />

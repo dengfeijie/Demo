@@ -10,8 +10,9 @@
 
     <style name="buttonStyle">
         <item name="android:background">#2196F3</item>
-        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_width">0dp</item>
         <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
 
@@ -19,4 +20,18 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">1dp</item>
     </style>
+
+    <!--透明activity的style-->
+    <style name="transparent_activity">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item><!--模糊-->
+    </style>
+
+    <declare-styleable name="PxBlurringView" >
+        <attr name="downsampleFactor" format="integer" />
+        <attr name="overlayColor" format="color" />
+    </declare-styleable>
 </resources>

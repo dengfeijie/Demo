@@ -12,7 +12,6 @@ import com.example.demo.page.bluetooth.BlueToothUserActivity
 import com.example.demo.page.first_code.JetPackDemoActivity
 import com.example.demo.page.materialdesign.MaterialDesignActivity
 import com.example.demo.page.first_code.SendMessageActivity
-import com.example.demo.page.mvvm.MvvmActivity
 import com.example.demo.page.news_mvvm.NewsActivity
 import com.example.demo.page.socket.SocketActivity
 import kotlinx.android.synthetic.main.activity_main.*
@@ -36,6 +35,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         btn_socket.setOnClickListener(this)
         btn_location.setOnClickListener(this)
         btn_mvvm.setOnClickListener(this)
+        btn_vague.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -81,6 +81,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
             btn_mvvm ->
                 startActivity(Intent(this, NewsActivity::class.java))
+
+//            btn_vague ->
+//                startActivity(Intent(this, VagueActivity::class.java))
         }
     }
 }

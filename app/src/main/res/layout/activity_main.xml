@@ -1,86 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="match_parent">
 
         <Button
                 android:id="@+id/btn_time"
                 style="@style/buttonStyle"
-                android:text="时间" />
+                android:text="时间"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
         <Button
                 android:id="@+id/btn_view"
                 style="@style/buttonStyle"
-                android:text="自定义view" />
+                android:text="自定义view"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintLeft_toRightOf="@id/btn_time"
+                app:layout_constraintTop_toTopOf="parent" />
 
         <Button
                 android:id="@+id/btn_material_design"
                 style="@style/buttonStyle"
-                android:text="materialDesign风格" />
+                android:text="materialDesign风格"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btn_view" />
 
         <Button
                 android:id="@+id/btn_localization"
                 style="@style/buttonStyle"
-                android:text="切换语言" />
+                android:text="切换语言"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_time" />
 
 
         <Button
                 android:id="@+id/btn_scroller"
                 style="@style/buttonStyle"
-                android:text="ScrollerLayout" />
-
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="ScrollerLayout"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_localization"
+                app:layout_constraintStart_toEndOf="@+id/btn_localization" />
 
         <Button
                 android:id="@+id/btn_message"
                 style="@style/buttonStyle"
-                android:text="聊天" />
+                android:text="聊天"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_scroller"
+                app:layout_constraintStart_toEndOf="@+id/btn_scroller" />
 
         <Button
                 android:id="@+id/btn_lite_pal"
                 style="@style/buttonStyle"
-                android:text="数据库" />
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="数据库"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_view_animation"
+                app:layout_constraintStart_toEndOf="@+id/btn_view_animation" />
 
         <Button
                 android:id="@+id/btn_bluetooth"
                 style="@style/buttonStyle"
-                android:text="客户端蓝牙" />
+                android:text="客户端蓝牙"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_view_animation" />
 
 
         <Button
                 android:id="@+id/btn_bluetooth_server"
                 style="@style/buttonStyle"
-                android:text="服务端蓝牙" />
-
+                android:text="服务端蓝牙"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_bluetooth"
+                app:layout_constraintStart_toEndOf="@+id/btn_bluetooth" />
 
         <Button
                 android:id="@+id/btn_view_animation"
                 style="@style/buttonStyle"
-                android:text="view的显示动画" />
+                android:text="view的显示动画"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_message" />
+
 
         <Button
                 android:id="@+id/btn_jetpack"
                 style="@style/buttonStyle"
-                android:text="JetPackDemo" />
-
+                android:text="JetPackDemo"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_mvvm"
+                app:layout_constraintStart_toEndOf="@+id/btn_mvvm" />
 
         <Button
                 android:id="@+id/btn_socket"
                 style="@style/buttonStyle"
-                android:text="Socket" />
+                android:text="Socket"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_jetpack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btn_jetpack" />
 
         <Button
                 android:id="@+id/btn_location"
                 style="@style/buttonStyle"
-                android:text="高德定位" />
+                android:text="高德定位"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_bluetooth" />
 
         <Button
                 android:id="@+id/btn_mvvm"
                 style="@style/buttonStyle"
-                android:text="MVVM" />
-    </LinearLayout>
+                android:text="MVVM"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_location"
+                app:layout_constraintStart_toEndOf="@+id/btn_location" />
+
+        <Button
+                android:id="@+id/btn_vague"
+                style="@style/buttonStyle"
+                android:text="骨架屏示例"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_location" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
