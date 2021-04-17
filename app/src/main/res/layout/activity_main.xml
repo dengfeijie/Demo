@@ -100,9 +100,8 @@
                 android:id="@+id/btn_socket"
                 style="@style/buttonStyle"
                 android:text="Socket"
-                app:layout_constraintBottom_toBottomOf="@+id/btn_jetpack"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/btn_jetpack" />
+                app:layout_constraintBottom_toBottomOf="@+id/btn_bluetooth_server"
+                app:layout_constraintStart_toEndOf="@+id/btn_bluetooth_server" />
 
         <Button
                 android:id="@+id/btn_location"
@@ -119,7 +118,7 @@
                 app:layout_constraintStart_toEndOf="@+id/btn_location" />
 
         <Button
-                android:id="@+id/btn_vague"
+                android:id="@+id/btn_skeleton"
                 style="@style/buttonStyle"
                 android:text="骨架屏示例"
                 app:layout_constraintStart_toStartOf="parent"

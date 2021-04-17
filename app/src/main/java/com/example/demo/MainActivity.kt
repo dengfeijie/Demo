@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.example.demo.lbrary_demo.SkeletonActivity
 import com.example.demo.page.*
 import com.example.demo.page.animation.AnimationActivity
 import com.example.demo.page.bluetooth.BlueToothServerActivity
@@ -35,7 +36,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         btn_socket.setOnClickListener(this)
         btn_location.setOnClickListener(this)
         btn_mvvm.setOnClickListener(this)
-        btn_vague.setOnClickListener(this)
+        btn_skeleton.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -82,8 +83,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             btn_mvvm ->
                 startActivity(Intent(this, NewsActivity::class.java))
 
-//            btn_vague ->
-//                startActivity(Intent(this, VagueActivity::class.java))
+            btn_skeleton ->
+                startActivity(Intent(this, SkeletonActivity::class.java))
         }
     }
 }

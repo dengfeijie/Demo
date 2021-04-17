@@ -30,6 +30,7 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".lbrary_demo.SkeletonActivity"></activity>
         <activity
                 android:name=".page.test.RestPageActivity"
                 android:theme="@style/transparent_activity" />

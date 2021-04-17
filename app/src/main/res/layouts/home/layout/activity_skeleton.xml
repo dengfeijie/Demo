@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".lbrary_demo.SkeletonActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/bg_white_radius_5dp"
+            android:elevation="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/ifv_avatar"
+                android:layout_width="120dp"
+                android:layout_height="130dp"
+                android:layout_margin="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mao"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:roundPercent="0.2" />
+
+
+        <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="这个是蓝胖子"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@id/ifv_avatar"
+                app:layout_constraintTop_toTopOf="@id/ifv_avatar" />
+
+        <TextView
+                android:id="@+id/tv_deciribe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:maxEms="10"
+                android:text="这个是一个玩具公仔，使用纯棉制造"
+                android:textColor="#777777"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@id/ifv_avatar"
+                app:layout_constraintLeft_toRightOf="@id/ifv_avatar"
+                app:layout_constraintTop_toTopOf="@id/ifv_avatar" />
+
+
+        <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="100￥"
+                android:textColor="#9A0404"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toBottomOf="@id/ifv_avatar"
+                app:layout_constraintLeft_toRightOf="@id/ifv_avatar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+            android:id="@+id/iv_phone"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_marginTop="40dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/avatar_left"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cl_item" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_brief"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_phone">
+
+
+        <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_marginLeft="10dp"
+                android:text="宗介"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_marginLeft="10dp"
+                android:text="出生地：日本"
+                android:textColor="#838383"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+        <TextView
+                android:id="@+id/tv_story"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:text="《悬崖上的金鱼公主》是由吉卜力工作室制作的长篇动画电影，于2008年7月19日首映。宗助和宗介的日文发音是相同的。宗介是保育园“向日葵园”的5岁男孩。心胸宽广又耿直，在悬崖下遇见波妞并决心要保护她。直接称呼自己父母的名字（理纱、耕一）。5岁即会发送摩尔斯电码。"
+                android:textColor="#009688"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_location" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
